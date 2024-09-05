@@ -27,6 +27,7 @@ import Vault from "./vault";
 import { TaskManager } from "./task-manager";
 import { pluralize } from "@notesnook/common";
 import { ConfirmDialog, showMultiDeleteConfirmation } from "../dialogs/confirm";
+import { strings } from "@notesnook/intl";
 
 async function moveNotesToTrash(ids: string[], confirm = true) {
   if (confirm && !(await showMultiDeleteConfirmation(ids.length))) return;
@@ -46,16 +47,16 @@ async function moveNotesToTrash(ids: string[], confirm = true) {
   await TaskManager.startTask({
     type: "status",
     id: "deleteNotes",
-    title: "Deleting notes",
+    title: strings.deletingItems("note", items.length),
     action: async (report) => {
       report({
-        text: `Deleting ${pluralize(items.length, "note")}...`
+        text: `${strings.deleting()} ${strings.notes(items.length)}...`
       });
       await noteStore.delete(...items);
     }
   });
 
-  showToast("success", `${pluralize(items.length, "note")} moved to trash`);
+  showToast("success", strings.movedToTrash("note", items.length));
 }
 
 async function moveNotebooksToTrash(ids: string[]) {
@@ -67,16 +68,19 @@ async function moveNotebooksToTrash(ids: string[]) {
   await TaskManager.startTask({
     type: "status",
     id: "deleteNotebooks",
-    title: "Deleting notebooks",
+    title: strings.deletingItems("notebook", ids.length),
     action: async (report) => {
       report({
-        text: `Deleting ${pluralize(ids.length, "notebook")}...`
+        text: `${strings.deleting()} ${strings.itemsPlural(
+          "notebook",
+          ids.length
+        )}...`
       });
       await notebookStore.delete(...ids);
     }
   });
 
-  showToast("success", `${pluralize(ids.length, "notebook")} moved to trash`);
+  showToast("success", strings.movedToTrash("notebook", ids.length));
 }
 
 async function deleteAttachments(ids: string[]) {
@@ -94,7 +98,7 @@ async function deleteAttachments(ids: string[]) {
   await TaskManager.startTask({
     type: "status",
     id: "deleteAttachments",
-    title: "Deleting attachments",
+    title: strings.deletingItems("attachment", ids.length),
     action: async (report) => {
       for (let i = 0; i < ids.length; ++i) {
         const id = ids[i];
@@ -102,7 +106,10 @@ async function deleteAttachments(ids: string[]) {
         if (!attachment) continue;
 
         report({
-          text: `Deleting ${pluralize(ids.length, "attachment")}...`,
+          text: `${strings.deleting()} ${strings.itemsPlural(
+            "attachment",
+            ids.length
+          )}...`,
           current: i,
           total: ids.length
         });
@@ -110,7 +117,7 @@ async function deleteAttachments(ids: string[]) {
       }
     }
   });
-  showToast("success", `${pluralize(ids.length, "attachment")} deleted`);
+  showToast("success", strings.deleted("attachment", ids.length));
 }
 
 async function moveRemindersToTrash(ids: string[]) {
@@ -122,16 +129,19 @@ async function moveRemindersToTrash(ids: string[]) {
   await TaskManager.startTask({
     type: "status",
     id: "deleteReminders",
-    title: "Deleting reminders",
+    title: strings.deletingItems("reminder", ids.length),
     action: async (report) => {
       report({
-        text: `Deleting ${pluralize(ids.length, "reminder")}...`
+        text: `${strings.deleting()} ${strings.itemsPlural(
+          "reminder",
+          ids.length
+        )}...`
       });
       await reminderStore.delete(...ids);
     }
   });
 
-  showToast("success", `${pluralize(ids.length, "reminder")} deleted.`);
+  showToast("success", strings.deleted("reminder", ids.length));
 }
 
 export const Multiselect = {

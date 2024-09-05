@@ -57,6 +57,7 @@ import { Attachment as AttachmentType } from "@notesnook/core";
 import { useEditorStore } from "../../stores/editor-store";
 import { PromptDialog } from "../../dialogs/prompt";
 import { DialogManager } from "../../common/dialog-manager";
+import { strings } from "@notesnook/intl";
 
 const FILE_ICONS: Record<string, Icon> = {
   "image/": FileImage,
@@ -195,13 +196,13 @@ export function Attachment({
             sx={{ flexShrink: 0 }}
             color={"accent"}
             size={16}
-            title={"Uploaded"}
+            title={strings.uploaded()}
           />
         ) : (
           <Checkmark
             sx={{ flexShrink: 0 }}
             size={16}
-            title={"Waiting for upload"}
+            title={strings.waitingForUpload()}
           />
         )}
       </Text>

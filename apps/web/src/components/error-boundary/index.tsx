@@ -28,6 +28,7 @@ import {
 } from "react-error-boundary";
 import { useKeyStore } from "../../interfaces/key-store";
 import { isFeatureSupported } from "../../utils/feature-check";
+import { strings } from "@notesnook/intl";
 
 export function GlobalErrorHandler(props: PropsWithChildren) {
   const { showBoundary } = useErrorBoundary();
@@ -106,17 +107,17 @@ export function ErrorComponent({ error, resetErrorBoundary }: FallbackProps) {
             variant="heading"
             sx={{ borderBottom: "1px solid var(--border)", pb: 1 }}
           >
-            Something went wrong
+            {strings.somethingWentWrong()}
           </Text>
           <ErrorText error={error} />
           {help ? (
             <>
               <Text variant="subtitle" sx={{ mt: 2 }}>
-                What went wrong?
+                {strings.whatWentWrong()}
               </Text>
               <Text variant="body">{help.explanation}</Text>
               <Text variant="subtitle" sx={{ mt: 1 }}>
-                How to fix it?
+                {strings.howToFix()}
               </Text>
               <Text variant="body">{help.action}</Text>
             </>
@@ -133,7 +134,7 @@ export function ErrorComponent({ error, resetErrorBoundary }: FallbackProps) {
                   })
                 }
               >
-                Fix it
+                {strings.fixIt()}
               </Button>
             ) : (
               <Button
@@ -141,7 +142,7 @@ export function ErrorComponent({ error, resetErrorBoundary }: FallbackProps) {
                 sx={{ alignSelf: "start", px: 30, mt: 1 }}
                 onClick={() => window.location.reload()}
               >
-                Reload app
+                {strings.reloadApp()}
               </Button>
             )}
             <>
@@ -152,7 +153,7 @@ export function ErrorComponent({ error, resetErrorBoundary }: FallbackProps) {
                   navigator.clipboard.writeText(errorToString(error));
                 }}
               >
-                Copy
+                {strings.copy()}
               </Button>
               <Button
                 variant="secondary"
@@ -174,7 +175,7 @@ ${getDeviceInfo()}`
                   window.open(mailto.toString(), "_blank");
                 }}
               >
-                Contact support
+                {strings.contactSupport()}
               </Button>
             </>
           </Flex>
@@ -196,9 +197,8 @@ function getErrorHelp(props: FallbackProps) {
     errorText.includes("corrupted migrations:")
   ) {
     return {
-      explanation: `This error usually means the database file is either corrupt or it could not be decrypted.`,
-      action:
-        "This error can only be fixed by wiping & reseting the database. Beware that this will wipe all your data inside the database with no way to recover it later on. This WILL NOT change/affect/delete/wipe your data on the server but ONLY on this device.",
+      explanation: strings.databaseCorruptExplain(),
+      action: strings.databaseCorruptFix(),
       fix: async () => {
         await resetDatabase();
         resetErrorBoundary();
@@ -206,9 +206,8 @@ function getErrorHelp(props: FallbackProps) {
     };
   } else if (errorText.includes("Could not decrypt key.")) {
     return {
-      explanation: `This error means the at rest encryption key could not be decrypted. This can be due to data corruption or implementation change.`,
-      action:
-        "This error can only be fixed by wiping & reseting the Key Store and the database. This WILL NOT change/affect/delete/wipe your data on the server but ONLY on this device.",
+      explanation: strings.decryptKeyErrorExplain(),
+      action: strings.decryptKeyErrorFix(),
       fix: async () => {
         await resetDatabase();
         resetErrorBoundary();
@@ -216,9 +215,8 @@ function getErrorHelp(props: FallbackProps) {
     };
   } else if (errorText.includes("database disk image is malformed")) {
     return {
-      explanation: `This error usually means the search index is corrupted.`,
-      action:
-        "This error can be fixed by rebuilding the search index. This action won't result in any kind of data loss.",
+      explanation: strings.searchIndexCorrupt(),
+      action: strings.searchIndexCorruptFix(),
       fix: async () => {
         const { db } = await import("../../common/db");
         await db.lookup.rebuild();

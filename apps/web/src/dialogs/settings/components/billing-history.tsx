@@ -17,22 +17,13 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { useEffect, useState } from "react";
-import { Loading } from "../../../components/icons";
-import { Box, Flex, Link, Text } from "@theme-ui/components";
 import { getFormattedDate } from "@notesnook/common";
+import { Transaction } from "@notesnook/core/dist/api/subscriptions";
+import { strings } from "@notesnook/intl";
+import { Box, Flex, Link, Text } from "@theme-ui/components";
+import { useEffect, useState } from "react";
 import { db } from "../../../common/db";
-import {
-  Transaction,
-  TransactionStatus
-} from "@notesnook/core/dist/api/subscriptions";
-
-const TransactionStatusToText: Record<TransactionStatus, string> = {
-  completed: "Completed",
-  refunded: "Refunded",
-  partially_refunded: "Partially refunded",
-  disputed: "Disputed"
-};
+import { Loading } from "../../../components/icons";
 
 export function BillingHistory() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
@@ -132,7 +123,7 @@ export function BillingHistory() {
                   {transaction.amount} {transaction.currency}
                 </Text>
                 <Text as="td" variant="body">
-                  {TransactionStatusToText[transaction.status]}
+                  {strings.transactionStatusToText[transaction.status]()}
                 </Text>
                 <Text as="td" variant="body">
                   <Link
@@ -142,7 +133,7 @@ export function BillingHistory() {
                     variant="text.subBody"
                     sx={{ color: "accent" }}
                   >
-                    View receipt
+                    {strings.viewReceipt()}
                   </Link>
                 </Text>
               </Box>

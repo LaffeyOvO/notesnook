@@ -28,6 +28,7 @@ import { MenuItem } from "@notesnook/ui";
 import { TrashItem as TrashItemType } from "@notesnook/core/dist/types";
 import { useEditorStore } from "../../stores/editor-store";
 import { showMultiPermanentDeleteConfirmation } from "../../dialogs/confirm";
+import { strings } from "@notesnook/intl";
 
 type TrashItemProps = { item: TrashItemType; date: number };
 function TrashItem(props: TrashItemProps) {
@@ -72,18 +73,18 @@ const menuItems: (item: TrashItemType, ids?: string[]) => MenuItem[] = (
     {
       type: "button",
       key: "restore",
-      title: "Restore",
+      title: strings.restore(),
       icon: Restore.path,
       onClick: async () => {
         await store.restore(...ids);
-        showToast("success", `${pluralize(ids.length, "item")} restored`);
+        showToast("success", strings.itemsRestored(ids.length));
       },
       multiSelect: true
     },
     {
       type: "button",
       key: "delete",
-      title: "Delete",
+      title: strings.delete(),
       icon: DeleteForver.path,
       variant: "dangerous",
       onClick: async () => {
@@ -91,7 +92,7 @@ const menuItems: (item: TrashItemType, ids?: string[]) => MenuItem[] = (
         await store.delete(...ids);
         showToast(
           "success",
-          `${pluralize(ids.length, "item")} permanently deleted`
+          `${pluralize(ids.length, "item")} ${strings.deletedPermanently()}`
         );
       },
       multiSelect: true
