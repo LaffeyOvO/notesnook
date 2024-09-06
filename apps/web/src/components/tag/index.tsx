@@ -31,6 +31,7 @@ import { MenuItem } from "@notesnook/ui";
 import { Tag as TagType } from "@notesnook/core";
 import { handleDrop } from "../../common/drop-handler";
 import { EditTagDialog } from "../../dialogs/item-dialog";
+import { strings } from "@notesnook/intl";
 
 type TagProps = { item: TagType; totalNotes: number };
 function Tag(props: TagProps) {
@@ -75,7 +76,7 @@ const menuItems: (tag: TagType, ids?: string[]) => MenuItem[] = (
     {
       type: "button",
       key: "edit",
-      title: "Rename tag",
+      title: strings.renameTag(),
       icon: Edit.path,
       onClick: () => EditTagDialog.show(tag)
     },
@@ -83,8 +84,8 @@ const menuItems: (tag: TagType, ids?: string[]) => MenuItem[] = (
       type: "button",
       key: "shortcut",
       title: db.shortcuts.exists(tag.id)
-        ? "Remove shortcut"
-        : "Create shortcut",
+        ? strings.removeShortcut()
+        : strings.addShortcut(),
       icon: Shortcut.path,
       onClick: () => appStore.addToShortcuts(tag)
     },
@@ -97,7 +98,7 @@ const menuItems: (tag: TagType, ids?: string[]) => MenuItem[] = (
       icon: DeleteForver.path,
       onClick: async () => {
         await db.tags.remove(...ids);
-        showToast("success", `${pluralize(ids.length, "tag")} deleted`);
+        showToast("success", strings.action("tag", ids.length, "deleted"));
         await appStore.refreshNavItems();
         await tagStore.refresh();
         await noteStore.refresh();

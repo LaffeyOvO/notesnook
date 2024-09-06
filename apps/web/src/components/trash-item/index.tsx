@@ -92,7 +92,7 @@ const menuItems: (item: TrashItemType, ids?: string[]) => MenuItem[] = (
         await store.delete(...ids);
         showToast(
           "success",
-          `${pluralize(ids.length, "item")} ${strings.deletedPermanently()}`
+          strings.action("item", ids.length, "permanentlyDeleted")
         );
       },
       multiSelect: true
