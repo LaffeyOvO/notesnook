@@ -243,7 +243,7 @@ const AttachmentMenuItems: (
     {
       key: "notes",
       type: "button",
-      title: "Linked notes",
+      title: strings.linkedNotes(),
       icon: References.path,
       menu: {
         items: [
@@ -270,7 +270,7 @@ const AttachmentMenuItems: (
                 menuItems.push({
                   type: "button",
                   key: "no-linked-note",
-                  title: "No linked note"
+                  title: strings.noLinkedNotes()
                 });
               return menuItems;
             }
@@ -281,7 +281,7 @@ const AttachmentMenuItems: (
     {
       type: "button",
       key: "recheck",
-      title: "Recheck",
+      title: strings.fileCheck(),
       icon: DoubleCheckmark.path,
       isDisabled: !attachment.dateUploaded,
       onClick: async () => {
@@ -291,11 +291,11 @@ const AttachmentMenuItems: (
     {
       type: "button",
       key: "rename",
-      title: "Rename",
+      title: strings.rename(),
       icon: Rename.path,
       onClick: async () => {
         const newName = await PromptDialog.show({
-          title: "Rename attachment",
+          title: strings.doAction("attachment", 1, "rename"),
           description: attachment.filename,
           defaultValue: attachment.filename
         });
@@ -306,7 +306,10 @@ const AttachmentMenuItems: (
     {
       type: "button",
       key: "download",
-      title: status?.type === "download" ? "Cancel download" : "Download",
+      title:
+        status?.type === "download"
+          ? strings.network.cancelDownload()
+          : strings.network.download(),
       icon: Download.path,
       onClick: async () => {
         const isDownloading = status?.type === "download";
@@ -318,7 +321,10 @@ const AttachmentMenuItems: (
     {
       type: "button",
       key: "reupload",
-      title: status?.type === "upload" ? "Cancel upload" : "Reupload",
+      title:
+        status?.type === "upload"
+          ? strings.network.cancelUpload()
+          : strings.network.reupload(),
       icon: Reupload.path,
       onClick: async () => {
         const isDownloading = status?.type === "upload";
@@ -331,7 +337,7 @@ const AttachmentMenuItems: (
       type: "button",
       key: "permanent-delete",
       variant: "dangerous",
-      title: "Delete permanently",
+      title: strings.deletePermanently(),
       icon: DeleteForver.path,
       onClick: () => Multiselect.deleteAttachments([attachment.id])
     }

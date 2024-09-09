@@ -94,7 +94,7 @@ const menuItems: (tag: TagType, ids?: string[]) => MenuItem[] = (
       type: "button",
       key: "delete",
       variant: "dangerous",
-      title: "Delete",
+      title: strings.delete(),
       icon: DeleteForver.path,
       onClick: async () => {
         await db.tags.remove(...ids);

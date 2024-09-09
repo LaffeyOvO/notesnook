@@ -24,6 +24,7 @@ import type {
 } from "./task-scheduler.worker";
 import { wrap, Remote } from "comlink";
 import { showToast } from "./toast";
+import { strings } from "@notesnook/intl";
 
 let worker: globalThis.Worker | undefined;
 let scheduler: Remote<TaskSchedulerType> | undefined;
@@ -51,7 +52,9 @@ export class TaskScheduler {
     } catch (e) {
       showToast(
         "error",
-        `Failed to register task: ${(e as Error).message} (cron: ${time})`
+        `${strings.failedToRegisterTask()}: ${
+          (e as Error).message
+        } (cron: ${time})`
       );
     }
   }

@@ -29,6 +29,7 @@ import { useCallback, useRef } from "react";
 import { handleDrop } from "../../common/drop-handler";
 import { useDragHandler } from "../../hooks/use-drag-handler";
 import { AddNotebookDialog } from "../../dialogs/add-notebook-dialog";
+import { strings } from "@notesnook/intl";
 
 type SubNotebookProps = {
   item: Notebook;
@@ -177,7 +178,7 @@ const subNotebookMenuItems: (
     {
       type: "button",
       key: "add",
-      title: "New notebook",
+      title: strings.newNotebook(),
       icon: Plus.path,
       onClick: () =>
         AddNotebookDialog.show({ parentId: notebook.id }).then((res) =>

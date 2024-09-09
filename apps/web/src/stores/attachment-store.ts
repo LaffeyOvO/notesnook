@@ -28,6 +28,7 @@ import { AttachmentStream } from "../utils/streams/attachment-stream";
 import { createZipStream } from "../utils/streams/zip-stream";
 import { createWriteStream } from "../utils/stream-saver";
 import { Attachment } from "@notesnook/core";
+import { strings } from "@notesnook/intl";
 
 let abortController: AbortController | undefined = undefined;
 class AttachmentStore extends BaseStore<AttachmentStore> {
@@ -96,7 +97,7 @@ class AttachmentStore extends BaseStore<AttachmentStore> {
         console.error(e);
         this._changeWorkingStatus(attachment.hash);
         if (e instanceof Error)
-          showToast("error", `Rechecking failed: ${e.message}`);
+          showToast("error", `${strings.recheckFailed()}: ${e.message}`);
       }
     }
   };
@@ -127,7 +128,7 @@ class AttachmentStore extends BaseStore<AttachmentStore> {
       console.error(e);
       this._changeWorkingStatus(attachment.hash);
       if (e instanceof Error)
-        showToast("error", `Failed to delete: ${e.message}`);
+        showToast("error", `${strings.failedToDelete()}: ${e.message}`);
     }
   };
 

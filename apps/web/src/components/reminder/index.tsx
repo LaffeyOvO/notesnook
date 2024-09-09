@@ -43,6 +43,7 @@ import { MenuItem } from "@notesnook/ui";
 import { Reminder as ReminderType } from "@notesnook/core/dist/types";
 import { ConfirmDialog } from "../../dialogs/confirm";
 import { EditReminderDialog } from "../../dialogs/add-reminder-dialog";
+import { strings } from "@notesnook/intl";
 
 const RECURRING_MODE_MAP = {
   week: "Weekly",
@@ -118,14 +119,14 @@ const menuItems: (reminder: ReminderType, items?: string[]) => MenuItem[] = (
     {
       type: "button",
       key: "edit",
-      title: "Edit",
+      title: strings.edit(),
       icon: Edit.path,
       onClick: () => hashNavigate(`/reminders/${reminder.id}/edit`)
     },
     {
       type: "button",
       key: "toggle",
-      title: reminder.disabled ? "Activate" : "Deactivate",
+      title: reminder.disabled ? strings.activate() : strings.deactivate(),
       icon: reminder.disabled ? Reminders.path : ReminderOff.path,
       onClick: async () => {
         await db.reminders.add({
@@ -139,7 +140,7 @@ const menuItems: (reminder: ReminderType, items?: string[]) => MenuItem[] = (
     {
       type: "button",
       key: "delete",
-      title: "Delete",
+      title: strings.delete(),
       variant: "dangerous",
       icon: Trash.path,
       onClick: async () => {
