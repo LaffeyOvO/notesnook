@@ -374,6 +374,10 @@ msgstr "Add your first note"
 msgid "Add your first notebook"
 msgstr "Add your first notebook"
 
+#: src/strings.tsx:2161
+msgid "Advanced"
+msgstr "Advanced"
+
 #: src/strings.tsx:1630
 msgid "After scanning the QR code image, the app will display a code that you can enter below."
 msgstr "After scanning the QR code image, the app will display a code that you can enter below."
@@ -605,6 +609,10 @@ msgstr "Authenticated as {email}"
 msgid "Authenticating user"
 msgstr "Authenticating user"
 
+#: src/strings.tsx:2125
+msgid "Authentication"
+msgstr "Authentication"
+
 #: src/strings.tsx:1634
 msgid "authentication app"
 msgstr "authentication app"
@@ -617,9 +625,17 @@ msgstr "Authentication cancelled by user"
 msgid "Authentication failed"
 msgstr "Authentication failed"
 
+#: src/strings.tsx:2088
+msgid "Auto"
+msgstr "Auto"
+
 #: src/strings.tsx:1557
 msgid "Auto save: off"
 msgstr "Auto save: off"
+
+#: src/strings.tsx:2102
+msgid "Auto start on system startup"
+msgstr "Auto start on system startup"
 
 #: src/strings.tsx:1122
 #: src/strings.tsx:1585
@@ -638,6 +654,10 @@ msgstr "Automatic backups disabled"
 msgid "Automatic backups with attachments"
 msgstr "Automatic backups with attachments"
 
+#: src/strings.tsx:2098
+msgid "Automatic updates"
+msgstr "Automatic updates"
+
 #: src/strings.tsx:1046
 #~ msgid "Automatically backup your data at regular intervals"
 #~ msgstr "Automatically backup your data at regular intervals"
@@ -645,6 +665,10 @@ msgstr "Automatic backups with attachments"
 #: src/strings.tsx:1043
 msgid "Automatically clear trash after a certain period of time"
 msgstr "Automatically clear trash after a certain period of time"
+
+#: src/strings.tsx:2100
+msgid "Automatically download & install updates in the background without prompting first."
+msgstr "Automatically download & install updates in the background without prompting first."
 
 #: src/strings.tsx:1095
 msgid "Automatically lock the app after a certain period"
@@ -665,6 +689,10 @@ msgstr "Background sync (experimental)"
 #: src/strings.tsx:1155
 #~ msgid "Backing up your data"
 #~ msgstr "Backing up your data"
+
+#: src/strings.tsx:2094
+msgid "Backup"
+msgstr "Backup"
 
 #: src/strings.tsx:1114
 msgid "Backup & restore"
@@ -714,6 +742,10 @@ msgstr "Backup saved at {path}"
 msgid "Backup successful"
 msgstr "Backup successful"
 
+#: src/strings.tsx:2095
+msgid "Backup with attachments"
+msgstr "Backup with attachments"
+
 #: src/strings.tsx:447
 msgid "Backups"
 msgstr "Backups"
@@ -737,6 +769,10 @@ msgstr "Behavior"
 #: src/strings.tsx:354
 msgid "BETA"
 msgstr "BETA"
+
+#: src/strings.tsx:2192
+msgid "Billing history"
+msgstr "Billing history"
 
 #: src/strings.tsx:1081
 msgid "Biometric unlocking"
@@ -830,6 +866,14 @@ msgstr "Change password"
 msgid "Change profile picture"
 msgstr "Change profile picture"
 
+#: src/strings.tsx:2170
+msgid "Change proxy"
+msgstr "Change proxy"
+
+#: src/strings.tsx:2191
+msgid "Change the payment method you used to purchase this subscription."
+msgstr "Change the payment method you used to purchase this subscription."
+
 #: src/strings.tsx:1156
 msgid "Change the sound that plays when you receive a notification"
 msgstr "Change the sound that plays when you receive a notification"
@@ -878,6 +922,10 @@ msgstr "Checking for updates"
 msgid "Choose a recovery method"
 msgstr "Choose a recovery method"
 
+#: src/strings.tsx:2093
+msgid "Choose backup format"
+msgstr "Choose backup format"
+
 #: src/strings.tsx:1027
 msgid "Choose from pre-built themes or create your own"
 msgstr "Choose from pre-built themes or create your own"
@@ -901,6 +949,10 @@ msgstr "Choose how you want to secure your notes locally."
 #: src/strings.tsx:1131
 msgid "Choose where to save your backups"
 msgstr "Choose where to save your backups"
+
+#: src/strings.tsx:2053
+msgid "Choose your style"
+msgstr "Choose your style"
 
 #: src/strings.tsx:1515
 msgid "cleaningUp"
@@ -926,6 +978,10 @@ msgstr "Clear default notebook"
 #: src/strings.tsx:932
 msgid "Clear logs"
 msgstr "Clear logs"
+
+#: src/strings.tsx:2186
+msgid "clear sessions"
+msgstr "clear sessions"
 
 #: src/strings.tsx:1218
 msgid "Clear trash"
@@ -981,6 +1037,10 @@ msgstr "Close all"
 msgid "Close others"
 msgstr "Close others"
 
+#: src/strings.tsx:2111
+msgid "Close to system tray"
+msgstr "Close to system tray"
+
 #: src/strings.tsx:2010
 msgid "Close to the left"
 msgstr "Close to the left"
@@ -1005,6 +1065,10 @@ msgstr "Color"
 #: src/strings.tsx:708
 msgid "Color #{color} already exists"
 msgstr "Color #{color} already exists"
+
+#: src/strings.tsx:2086
+msgid "Color scheme"
+msgstr "Color scheme"
 
 #: src/strings.tsx:1397
 msgid "Color title"
@@ -1053,6 +1117,10 @@ msgstr "Confirm password"
 #: src/strings.tsx:1395
 msgid "Confirm pin"
 msgstr "Confirm pin"
+
+#: src/strings.tsx:2071
+msgid "Congratulations!"
+msgstr "Congratulations!"
 
 #: src/strings.tsx:1532
 msgid "Connected to all servers sucessfully."
@@ -1218,6 +1286,10 @@ msgstr "Creating a{0} backup"
 msgid "Credentials"
 msgstr "Credentials"
 
+#: src/strings.tsx:2056
+msgid "Cross platform & 100% encrypted"
+msgstr "Cross platform & 100% encrypted"
+
 #: src/strings.tsx:664
 msgid "Curate the toolbar that fits your needs and matches your personality."
 msgstr "Curate the toolbar that fits your needs and matches your personality."
@@ -1241,6 +1313,10 @@ msgstr "CURRENT PLAN"
 #: src/strings.tsx:2002
 msgid "Custom"
 msgstr "Custom"
+
+#: src/strings.tsx:2122
+msgid "Custom dictionary words"
+msgstr "Custom dictionary words"
 
 #: src/strings.tsx:1022
 msgid "Customization"
@@ -1276,6 +1352,10 @@ msgstr "Dark"
 msgid "Dark mode"
 msgstr "Dark mode"
 
+#: src/strings.tsx:2087
+msgid "Dark or light, we won't judge."
+msgstr "Dark or light, we won't judge."
+
 #: src/strings.tsx:1450
 msgid "Database setup failed, could not get database key"
 msgstr "Database setup failed, could not get database key"
@@ -1283,6 +1363,10 @@ msgstr "Database setup failed, could not get database key"
 #: src/strings.tsx:1752
 msgid "Date"
 msgstr "Date"
+
+#: src/strings.tsx:2096
+msgid "Date & time"
+msgstr "Date & time"
 
 #: src/strings.tsx:591
 msgid "Date created"
@@ -1431,6 +1515,14 @@ msgstr "Deleting"
 msgid "Description"
 msgstr "Description"
 
+#: src/strings.tsx:2097
+msgid "Desktop app"
+msgstr "Desktop app"
+
+#: src/strings.tsx:2101
+msgid "Desktop integration"
+msgstr "Desktop integration"
+
 #: src/strings.tsx:807
 msgid "Did you save recovery key?"
 msgstr "Did you save recovery key?"
@@ -1526,6 +1618,10 @@ msgstr "Download all attachments"
 #: src/strings.tsx:1773
 msgid "Download backup file"
 msgstr "Download backup file"
+
+#: src/strings.tsx:2198
+msgid "Download everything including attachments on sync"
+msgstr "Download everything including attachments on sync"
 
 #: src/strings.tsx:1191
 msgid "Download on desktop"
@@ -1650,6 +1746,10 @@ msgstr "Enable app lock"
 msgid "Enable editor margins"
 msgstr "Enable editor margins"
 
+#: src/strings.tsx:2118
+msgid "Enable spell checker"
+msgstr "Enable spell checker"
+
 #: src/strings.tsx:450
 msgid "Enable two-factor authentication to add an extra layer of security to your account."
 msgstr "Enable two-factor authentication to add an extra layer of security to your account."
@@ -1730,6 +1830,10 @@ msgstr "Enter notebook title"
 msgid "Enter password"
 msgstr "Enter password"
 
+#: src/strings.tsx:2079
+msgid "Enter pin or password to enable app lock."
+msgstr "Enter pin or password to enable app lock."
+
 #: src/strings.tsx:101
 msgid "Enter the 6 digit code from your authenticator app to continue logging in"
 msgstr "Enter the 6 digit code from your authenticator app to continue logging in"
@@ -1757,6 +1861,10 @@ msgstr "Enter verification code sent to your new email"
 #: src/strings.tsx:1400
 msgid "Enter your new email"
 msgstr "Enter your new email"
+
+#: src/strings.tsx:2080
+msgid "Enter your username"
+msgstr "Enter your username"
 
 #: src/strings.tsx:1457
 msgid "Error applying promo code"
@@ -1793,6 +1901,10 @@ msgstr "Events server"
 #: src/strings.tsx:2005
 msgid "Exit fullscreen"
 msgstr "Exit fullscreen"
+
+#: src/strings.tsx:2063
+msgid "Experience the next level of private note taking\""
+msgstr "Experience the next level of private note taking\""
 
 #: src/strings.tsx:426
 msgid "Export"
@@ -1882,6 +1994,14 @@ msgstr "Failed to send verification email"
 msgid "Failed to subscribe"
 msgstr "Failed to subscribe"
 
+#: src/strings.tsx:2193
+msgid "Failed to take backup"
+msgstr "Failed to take backup"
+
+#: src/strings.tsx:2195
+msgid "Failed to take backup of your data. Do you want to continue logging out?"
+msgstr "Failed to take backup of your data. Do you want to continue logging out?"
+
 #: src/strings.tsx:804
 msgid "Failed to unpublish note"
 msgstr "Failed to unpublish note"
@@ -1951,6 +2071,10 @@ msgstr "Fix it"
 msgid "Focus mode"
 msgstr "Focus mode"
 
+#: src/strings.tsx:2153
+msgid "follow"
+msgstr "follow"
+
 #: src/strings.tsx:1176
 msgid "Follow us on Mastodon"
 msgstr "Follow us on Mastodon"
@@ -1975,6 +2099,10 @@ msgstr "For a more integrated user experience, try out Notesnook for {platform}"
 msgid "for help regarding how to use the Notesnook Importer."
 msgstr "for help regarding how to use the Notesnook Importer."
 
+#: src/strings.tsx:2185
+msgid "Force logout from all your other logged in devices."
+msgstr "Force logout from all your other logged in devices."
+
 #: src/strings.tsx:1013
 msgid "Force pull changes"
 msgstr "Force pull changes"
@@ -1982,6 +2110,20 @@ msgstr "Force pull changes"
 #: src/strings.tsx:1018
 msgid "Force push changes"
 msgstr "Force push changes"
+
+#: src/strings.tsx:2202
+msgid ""
+"Force push:\n"
+"Use this if changes made on this device are not appearing on other devices. This will overwrite the data on the server with the data from this device.\n"
+"Force pull:\n"
+"Use this if changes from other devices are not appearing on this device. This will overwrite the data on this device with the latest data from the server.\n"
+"**These must only be used for troubleshooting. Using them regularly for sync is not recommended and will lead to unexpected data loss and other issues. If you are having persistent issues with sync, please report them to us at support@streetwriters.co.**"
+msgstr ""
+"Force push:\n"
+"Use this if changes made on this device are not appearing on other devices. This will overwrite the data on the server with the data from this device.\n"
+"Force pull:\n"
+"Use this if changes from other devices are not appearing on this device. This will overwrite the data on this device with the latest data from the server.\n"
+"**These must only be used for troubleshooting. Using them regularly for sync is not recommended and will lead to unexpected data loss and other issues. If you are having persistent issues with sync, please report them to us at support@streetwriters.co.**"
 
 #: src/strings.tsx:500
 msgid "Forgot password?"
@@ -1998,6 +2140,14 @@ msgstr "Friday"
 #: src/strings.tsx:1991
 msgid "Full name updated"
 msgstr "Full name updated"
+
+#: src/strings.tsx:2196
+msgid "Full offline mode"
+msgstr "Full offline mode"
+
+#: src/strings.tsx:2083
+msgid "General"
+msgstr "General"
 
 #: src/strings.tsx:1169
 msgid "Get helpful debug info about the app to help us find bugs."
@@ -2071,6 +2221,10 @@ msgstr "Group by"
 msgid "Hash copied"
 msgstr "Hash copied"
 
+#: src/strings.tsx:2199
+msgid "Having problems with sync?"
+msgstr "Having problems with sync?"
+
 #: src/strings.tsx:1157
 msgid "Help and support"
 msgstr "Help and support"
@@ -2086,6 +2240,10 @@ msgstr "Hide"
 #: src/strings.tsx:1086
 msgid "Hide app contents when you switch to other apps. This will also disable screenshot taking in the app."
 msgstr "Hide app contents when you switch to other apps. This will also disable screenshot taking in the app."
+
+#: src/strings.tsx:2158
+msgid "Hide note title"
+msgstr "Hide note title"
 
 #: src/strings.tsx:853
 msgid "History"
@@ -2139,6 +2297,10 @@ msgstr "I have a recovery code"
 msgid "I have saved my key"
 msgstr "I have saved my key"
 
+#: src/strings.tsx:2200
+msgid "I understand"
+msgstr "I understand"
+
 #: src/strings.tsx:363
 msgid "If the editor fails to load even after reloading. Try restarting the app."
 msgstr "If the editor fails to load even after reloading. Try restarting the app."
@@ -2146,6 +2308,14 @@ msgstr "If the editor fails to load even after reloading. Try restarting the app
 #: src/strings.tsx:237
 msgid "If this continues to happen, please reach out to us via"
 msgstr "If this continues to happen, please reach out to us via"
+
+#: src/strings.tsx:2104
+msgid "If true, Notesnook will automatically start up when you turn on & login to your system."
+msgstr "If true, Notesnook will automatically start up when you turn on & login to your system."
+
+#: src/strings.tsx:2107
+msgid "If true, Notesnook will start minimized to either the system tray or your system taskbar/dock. This setting only works with Auto start on system startup is enabled."
+msgstr "If true, Notesnook will start minimized to either the system tray or your system taskbar/dock. This setting only works with Auto start on system startup is enabled."
 
 #: src/strings.tsx:1628
 msgid "If you can't scan the QR code above, enter this text instead (spaces don't matter)"
@@ -2158,6 +2328,10 @@ msgid ""
 msgstr ""
 "If you didn't get an email from us or the confirmation link isn't\n"
 "working,"
+
+#: src/strings.tsx:2068
+msgid "If you face any issue, you can reach out to us anytime."
+msgstr "If you face any issue, you can reach out to us anytime."
 
 #: src/strings.tsx:216
 msgid "If you want to ask something in general or need some assistance, we would suggest that you"
@@ -2276,6 +2450,10 @@ msgstr "Join our Telegram group"
 msgid "Join our Telegram group to chat with other users and the team"
 msgstr "Join our Telegram group to chat with other users and the team"
 
+#: src/strings.tsx:2059
+msgid "Join the cause"
+msgstr "Join the cause"
+
 #: src/strings.tsx:2018
 msgid "Jump to group"
 msgstr "Jump to group"
@@ -2291,6 +2469,10 @@ msgstr "Keep open"
 #: src/strings.tsx:1256
 msgid "Keep your data safe"
 msgstr "Keep your data safe"
+
+#: src/strings.tsx:2119
+msgid "Languages"
+msgstr "Languages"
 
 #: src/strings.tsx:538
 msgid "Later"
@@ -2436,6 +2618,10 @@ msgstr "Locked notes cannot be pinned"
 msgid "Locked notes cannot be published"
 msgstr "Locked notes cannot be published"
 
+#: src/strings.tsx:2183
+msgid "Log out from all other devices"
+msgstr "Log out from all other devices"
+
 #: src/strings.tsx:369
 msgid "Logging out"
 msgstr "Logging out"
@@ -2536,6 +2722,10 @@ msgstr "Marketing emails"
 msgid "Maximize"
 msgstr "Maximize"
 
+#: src/strings.tsx:2061
+msgid "Meet other privacy-minded people & talk to us directly about your concerns, issues and suggestions."
+msgstr "Meet other privacy-minded people & talk to us directly about your concerns, issues and suggestions."
+
 #: src/strings.tsx:1621
 #~ msgid "Member since"
 #~ msgstr "Member since"
@@ -2563,6 +2753,10 @@ msgstr "Minimal"
 #: src/strings.tsx:2031
 msgid "Minimize"
 msgstr "Minimize"
+
+#: src/strings.tsx:2108
+msgid "Minimize to system tray"
+msgstr "Minimize to system tray"
 
 #: src/strings.tsx:623
 msgid "mo"
@@ -2906,9 +3100,25 @@ msgstr "Notes exported as {path} successfully"
 msgid "notes imported"
 msgstr "notes imported"
 
+#: src/strings.tsx:2058
+msgid "Notesnook encrypts everything offline before syncing to your other devices. This means that no one can read your notes except you. Not even us."
+msgstr "Notesnook encrypts everything offline before syncing to your other devices. This means that no one can read your notes except you. Not even us."
+
 #: src/strings.tsx:983
 msgid "Notesnook Pro"
 msgstr "Notesnook Pro"
+
+#: src/strings.tsx:2164
+msgid ""
+"Notesnook uses the following DNS providers:\n"
+"1. Cloudflare DNS\n"
+"2. Quad9\n"
+"This can sometimes bypass local ISP blockages on Notesnook traffic. Disable this if you want the app to use system's DNS settings."
+msgstr ""
+"Notesnook uses the following DNS providers:\n"
+"1. Cloudflare DNS\n"
+"2. Quad9\n"
+"This can sometimes bypass local ISP blockages on Notesnook traffic. Disable this if you want the app to use system's DNS settings."
 
 #: src/strings.tsx:920
 msgid "Notesnook will send you a 2FA code on your email when prompted"
@@ -3018,6 +3228,10 @@ msgstr "Order by"
 msgid "Orphaned"
 msgstr "Orphaned"
 
+#: src/strings.tsx:2092
+msgid "Partial backups contain all your data except attachments. They are created from data already available on your device and do not require an Internet connection."
+msgstr "Partial backups contain all your data except attachments. They are created from data already available on your device and do not require an Internet connection."
+
 #: src/strings.tsx:1644
 msgid "Partially refunded"
 msgstr "Partially refunded"
@@ -3057,6 +3271,14 @@ msgstr "Password protection"
 #: src/strings.tsx:726
 msgid "Password updated"
 msgstr "Password updated"
+
+#: src/strings.tsx:2072
+msgid "Password/pin"
+msgstr "Password/pin"
+
+#: src/strings.tsx:2189
+msgid "Payment method"
+msgstr "Payment method"
 
 #: src/strings.tsx:709
 msgid "PDF is password protected"
@@ -3305,9 +3527,21 @@ msgstr "Preparing to restore backup file..."
 msgid "PRESETS"
 msgstr "PRESETS"
 
+#: src/strings.tsx:2110
+msgid "Pressing \"—\" will hide the app in your system tray."
+msgstr "Pressing \"—\" will hide the app in your system tray."
+
+#: src/strings.tsx:2113
+msgid "Pressing \"X\" will hide the app in your system tray."
+msgstr "Pressing \"X\" will hide the app in your system tray."
+
 #: src/strings.tsx:859
 msgid "Prevent {0} from syncing"
 msgstr "Prevent {0} from syncing"
+
+#: src/strings.tsx:2160
+msgid "Prevent note title from appearing in tab/window title."
+msgstr "Prevent note title from appearing in tab/window title."
 
 #: src/strings.tsx:164
 msgid "Preview not available, content is encrypted."
@@ -3365,6 +3599,10 @@ msgstr "Processing"
 msgid "Productivity"
 msgstr "Productivity"
 
+#: src/strings.tsx:2124
+msgid "Profile"
+msgstr "Profile"
+
 #: src/strings.tsx:1966
 msgid "Profile updated"
 msgstr "Profile updated"
@@ -3376,6 +3614,10 @@ msgstr "Properties"
 #: src/strings.tsx:367
 msgid "Protect your notes"
 msgstr "Protect your notes"
+
+#: src/strings.tsx:2171
+msgid "Proxy"
+msgstr "Proxy"
 
 #: src/strings.tsx:441
 #: src/strings.tsx:1865
@@ -3525,6 +3767,10 @@ msgstr "References"
 #: src/strings.tsx:472
 msgid "Regenerate"
 msgstr "Regenerate"
+
+#: src/strings.tsx:2078
+msgid "Register"
+msgstr "Register"
 
 #: src/strings.tsx:391
 msgid "Release notes"
@@ -3677,6 +3923,10 @@ msgstr "Repeat"
 #: src/strings.tsx:313
 msgid "Repeats daily at {date}"
 msgstr "Repeats daily at {date}"
+
+#: src/strings.tsx:2154
+msgid "Report"
+msgstr "Report"
 
 #: src/strings.tsx:1158
 msgid "Report an issue"
@@ -3851,6 +4101,10 @@ msgstr "Rotate right"
 msgid "Run file check"
 msgstr "Run file check"
 
+#: src/strings.tsx:2050
+msgid "Safe & encrypted notes"
+msgstr "Safe & encrypted notes"
+
 #: src/strings.tsx:572
 msgid "Sat"
 msgstr "Sat"
@@ -3972,6 +4226,10 @@ msgstr "Searching for {query}"
 msgid "sec"
 msgstr "sec"
 
+#: src/strings.tsx:2074
+msgid "Security key"
+msgstr "Security key"
+
 #: src/strings.tsx:1980
 msgid "Security key successfully registered."
 msgstr "Security key successfully registered."
@@ -3987,6 +4245,10 @@ msgstr "Select"
 #: src/strings.tsx:1507
 msgid "Select a backup file from your device to restore backup"
 msgstr "Select a backup file from your device to restore backup"
+
+#: src/strings.tsx:2089
+msgid "Select a theme"
+msgstr "Select a theme"
 
 #: src/strings.tsx:1130
 msgid "Select backup directory"
@@ -4052,6 +4314,10 @@ msgstr "Select profile picture"
 msgid "Select the folder that includes your backup files to list them here."
 msgstr "Select the folder that includes your backup files to list them here."
 
+#: src/strings.tsx:2121
+msgid "Select the languages the spell checker should check in."
+msgstr "Select the languages the spell checker should check in."
+
 #: src/strings.tsx:1558
 msgid "selected"
 msgstr "selected"
@@ -4063,6 +4329,10 @@ msgstr "SELECTED NOTE"
 #: src/strings.tsx:251
 msgid "Self destruct"
 msgstr "Self destruct"
+
+#: src/strings.tsx:2155
+msgid "Send"
+msgstr "Send"
 
 #: src/strings.tsx:111
 msgid "Send code"
@@ -4111,6 +4381,10 @@ msgstr "Server with host {host} not found."
 #: src/strings.tsx:79
 msgid "Session expired"
 msgstr "Session expired"
+
+#: src/strings.tsx:2181
+msgid "Sessions"
+msgstr "Sessions"
 
 #: src/strings.tsx:914
 msgid "Set a reminder"
@@ -4181,6 +4455,22 @@ msgstr "Setup a password to lock the app"
 #: src/strings.tsx:1098
 msgid "Setup a pin to lock the app"
 msgstr "Setup a pin to lock the app"
+
+#: src/strings.tsx:2173
+msgid ""
+"Setup an HTTP/HTTPS/SOCKS proxy.\n"
+"For example:\n"
+"http://foobar:80\n"
+"socks4://proxy.example.com\n"
+"http://username:password@foobar:80\n"
+"To remove the proxy, simply erase everything in the input."
+msgstr ""
+"Setup an HTTP/HTTPS/SOCKS proxy.\n"
+"For example:\n"
+"http://foobar:80\n"
+"socks4://proxy.example.com\n"
+"http://username:password@foobar:80\n"
+"To remove the proxy, simply erase everything in the input."
 
 #: src/strings.tsx:1099
 msgid "Setup app lock password"
@@ -4306,6 +4596,10 @@ msgstr "Sort"
 msgid "Sort by"
 msgstr "Sort by"
 
+#: src/strings.tsx:2117
+msgid "Spell check"
+msgstr "Spell check"
+
 #: src/strings.tsx:1021
 msgid "Start"
 msgstr "Start"
@@ -4321,6 +4615,10 @@ msgstr "Start import"
 #: src/strings.tsx:1735
 msgid "Start importing now"
 msgstr "Start importing now"
+
+#: src/strings.tsx:2105
+msgid "Start minimized"
+msgstr "Start minimized"
 
 #: src/strings.tsx:1657
 msgid "Start over"
@@ -4389,6 +4687,10 @@ msgstr "Sunday"
 #: src/strings.tsx:1363
 msgid "Switch to search/replace mode"
 msgstr "Switch to search/replace mode"
+
+#: src/strings.tsx:2126
+msgid "Sync"
+msgstr "Sync"
 
 #: src/strings.tsx:359
 msgid "Sync failed"
@@ -4575,9 +4877,17 @@ msgstr "Test connection before changing server urls"
 msgid "Thank you for choosing end-to-end encrypted note taking. Now you can sync your notes to unlimited devices."
 msgstr "Thank you for choosing end-to-end encrypted note taking. Now you can sync your notes to unlimited devices."
 
+#: src/strings.tsx:2041
+msgid "Thank you for reporting!"
+msgstr "Thank you for reporting!"
+
 #: src/strings.tsx:434
 msgid "Thank you for updating Notesnook! We will be applying some minor changes for a better note taking experience."
 msgstr "Thank you for updating Notesnook! We will be applying some minor changes for a better note taking experience."
+
+#: src/strings.tsx:2066
+msgid "Thank you. You are the proof that privacy always comes first."
+msgstr "Thank you. You are the proof that privacy always comes first."
 
 #: src/strings.tsx:1539
 msgid "The {title} at {url} is not compatible with this client."
@@ -4586,6 +4896,10 @@ msgstr "The {title} at {url} is not compatible with this client."
 #: src/strings.tsx:214
 msgid "The information above will be publically available at"
 msgstr "The information above will be publically available at"
+
+#: src/strings.tsx:2073
+msgid "The password/pin for unlocking the app."
+msgstr "The password/pin for unlocking the app."
 
 #: src/strings.tsx:315
 msgid "The reminder will repeat daily at {date}."
@@ -4598,6 +4912,10 @@ msgstr "The reminder will repeat every year on {date}."
 #: src/strings.tsx:1616
 msgid "The reminder will start on {date} at {time}."
 msgstr "The reminder will start on {date} at {time}."
+
+#: src/strings.tsx:2076
+msgid "The security key for unlocking the app. This is the most secure method."
+msgstr "The security key for unlocking the app. This is the most secure method."
 
 #: src/strings.tsx:1479
 #~ msgid "The server version is not compatible with the app."
@@ -4675,6 +4993,10 @@ msgstr "This note is not referenced in other notes."
 msgid "This note will be published to a public URL."
 msgstr "This note will be published to a public URL."
 
+#: src/strings.tsx:2082
+msgid "This username will be used to distinguish between different credentials in your security key. Make sure it is unique."
+msgstr "This username will be used to distinguish between different credentials in your security key. Make sure it is unique."
+
 #: src/strings.tsx:570
 msgid "Thu"
 msgstr "Thu"
@@ -4711,6 +5033,10 @@ msgstr "To use app lock, you must enable biometrics such as Fingerprint lock or 
 #: src/strings.tsx:1726
 msgid "Toggle dark/light mode"
 msgstr "Toggle dark/light mode"
+
+#: src/strings.tsx:2123
+msgid "Toolbar"
+msgstr "Toolbar"
 
 #: src/strings.tsx:1222
 #: src/strings.tsx:1432
@@ -4900,6 +5226,10 @@ msgstr "Unpublish notes to delete them"
 msgid "unpublished"
 msgstr "unpublished"
 
+#: src/strings.tsx:2077
+msgid "Unregister"
+msgstr "Unregister"
+
 #: src/strings.tsx:193
 msgid "Untitled"
 msgstr "Untitled"
@@ -4994,6 +5324,10 @@ msgstr "Use account password"
 msgid "Use an authenticator app to generate 2FA codes."
 msgstr "Use an authenticator app to generate 2FA codes."
 
+#: src/strings.tsx:2162
+msgid "Use custom DNS"
+msgstr "Use custom DNS"
+
 #: src/strings.tsx:1032
 msgid "Use dark mode for the app"
 msgstr "Use dark mode for the app"
@@ -5005,6 +5339,14 @@ msgstr "Use encryption key"
 #: src/strings.tsx:1063
 msgid "Use markdown shortcuts in the editor"
 msgstr "Use markdown shortcuts in the editor"
+
+#: src/strings.tsx:2116
+msgid "Use native OS titlebar instead of replacing it with a custom one. Requires app restart for changes to take effect."
+msgstr "Use native OS titlebar instead of replacing it with a custom one. Requires app restart for changes to take effect."
+
+#: src/strings.tsx:2114
+msgid "Use native titlebar"
+msgstr "Use native titlebar"
 
 #: src/strings.tsx:1028
 msgid "Use system theme"
@@ -5152,6 +5494,10 @@ msgstr "We are sorry, it seems that the app crashed due to an error. You can sub
 msgid "We have sent you an email confirmation link. Please check your email inbox. If you cannot find the email, check your spam folder."
 msgstr "We have sent you an email confirmation link. Please check your email inbox. If you cannot find the email, check your spam folder."
 
+#: src/strings.tsx:2157
+msgid "We send you occasional promotional offers & product updates on your email (once every month)."
+msgstr "We send you occasional promotional offers & product updates on your email (once every month)."
+
 #: src/strings.tsx:1070
 msgid "We will send you occasional promotional offers & product updates on your email (sent once every month)."
 msgstr "We will send you occasional promotional offers & product updates on your email (sent once every month)."
@@ -5194,6 +5540,10 @@ msgstr "Welcome back, {email}"
 msgid "Welcome back!"
 msgstr "Welcome back!"
 
+#: src/strings.tsx:2064
+msgid "Welcome to Notesnook Pro"
+msgstr "Welcome to Notesnook Pro"
+
 #: src/strings.tsx:1563
 msgid "What went wrong?"
 msgstr "What went wrong?"
@@ -5213,6 +5563,10 @@ msgstr "Write something..."
 #: src/strings.tsx:1550
 msgid "Write with freedom."
 msgstr "Write with freedom."
+
+#: src/strings.tsx:2052
+msgid "Write with freedom. Never compromise on privacy again."
+msgstr "Write with freedom. Never compromise on privacy again."
 
 #: src/strings.tsx:336
 msgid "year"
@@ -5256,6 +5610,14 @@ msgstr "You are renaming color {color}"
 msgid "You can add as many tags as you want."
 msgstr "You can add as many tags as you want."
 
+#: src/strings.tsx:2055
+msgid "You can change the theme at any time from Settings or the side menu."
+msgstr "You can change the theme at any time from Settings or the side menu."
+
+#: src/strings.tsx:2070
+msgid "You can import your notes from most other note taking apps."
+msgstr "You can import your notes from most other note taking apps."
+
 #: src/strings.tsx:1330
 msgid "You can multi-select notes and move them to a notebook at once"
 msgstr "You can multi-select notes and move them to a notebook at once"
@@ -5272,6 +5634,16 @@ msgstr "You can set a custom proxy URL to increase your privacy."
 msgid "You can swipe left anywhere in the app to start a new note."
 msgstr "You can swipe left anywhere in the app to start a new note."
 
+#: src/strings.tsx:2044
+msgid ""
+"You can track your bug report at [{url}]({url}).\n"
+"Please note that we will respond to your bug report on the link above. **We recommended that you save the above link for later reference.**\n"
+"If your issue is critical (e.g. notes not syncing, crashes etc.), please [join our Discord community](https://discord.com/invite/zQBK97EE22) for one-to-one support."
+msgstr ""
+"You can track your bug report at [{url}]({url}).\n"
+"Please note that we will respond to your bug report on the link above. **We recommended that you save the above link for later reference.**\n"
+"If your issue is critical (e.g. notes not syncing, crashes etc.), please [join our Discord community](https://discord.com/invite/zQBK97EE22) for one-to-one support."
+
 #: src/strings.tsx:209
 msgid "You can track your issue at"
 msgstr "You can track your issue at"
@@ -5287,6 +5659,14 @@ msgstr "You can view & restore older versions of any note by going to its proper
 #: src/strings.tsx:1649
 msgid "You have {count} custom dictionary words."
 msgstr "You have {count} custom dictionary words."
+
+#: src/strings.tsx:2188
+msgid "You have been logged out from all other devices."
+msgstr "You have been logged out from all other devices."
+
+#: src/strings.tsx:2182
+msgid "You have been logged out."
+msgstr "You have been logged out."
 
 #: src/strings.tsx:903
 msgid "You have not added any notebooks yet"
@@ -5380,6 +5760,10 @@ msgstr "Your changes could not be saved"
 #: src/strings.tsx:1676
 msgid "Your changes have been saved and will be reflected after the app has refreshed."
 msgstr "Your changes have been saved and will be reflected after the app has refreshed."
+
+#: src/strings.tsx:2090
+msgid "Your current 2FA method is {method}"
+msgstr "Your current 2FA method is {method}"
 
 #: src/strings.tsx:1767
 msgid "Your data recovery key will be used to decrypt your data"
@@ -5481,9 +5865,17 @@ msgstr "Z to A"
 msgid "Zipping"
 msgstr "Zipping"
 
+#: src/strings.tsx:2084
+msgid "Zoom factor"
+msgstr "Zoom factor"
+
 #: src/strings.tsx:1596
 msgid "Zoom in"
 msgstr "Zoom in"
+
+#: src/strings.tsx:2085
+msgid "Zoom in or out the app content."
+msgstr "Zoom in or out the app content."
 
 #: src/strings.tsx:1595
 msgid "Zoom out"
